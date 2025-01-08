@@ -1,5 +1,4 @@
 # Apuntes_EGC
-# EGC
 
 ---
 
@@ -30,7 +29,48 @@ git config --global user.email "serponlop@alum.us.es"
 ### Instalar UVLHUB
 
 [Intalación de uvlhub](https://docs.uvlhub.io/installation/manual_installation)
-
+1. Git clone
+```bash
+git clone git@github.com:<YOUR_GITHUB_USER>/uvlhub_practicas.git
+cd uvlhub_practicas
+```
+2. Crear y entrar en el entorno dentro del repositorio: 
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+3. Copiar el .env:
+```bash
+cp .env.local.example .env
+```
+4. Ignrorar webhook: 
+```bash
+echo "webhook" > .moduleignore
+```
+5. Instalar las dependencias:
+```bash
+pip install -r requirements.txt
+```
+6. Instalar rosemary:
+```bash
+pip install -e ./
+```
+7. Realizar migraciones:
+```bash
+flask db migrate
+```
+8. Aplicar las migraciones:
+```bash
+flask db upgrade
+```
+9. Popular la base de datos:
+```bash
+rosemary db:seed
+```
+10. Correr el servidor:
+```bash
+flask run --host=0.0.0.0 --reload --debug
+```
 ### Entorno virtual
 
 Crear entorno virtual
