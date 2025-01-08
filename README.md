@@ -27,6 +27,27 @@ git config --global user.email "serponlop@alum.us.es"
  cat id_rsa.pub
 ```
 
+### Instalar UVLHUB
+
+[Intalación de uvlhub](https://docs.uvlhub.io/installation/manual_installation)
+
+### Entorno virtual
+
+Crear entorno virtual
+```bash
+python3.12 -m venv <myenvname>
+```
+
+Activar entorno virtual
+```bash
+source <myenvname>/bin/activate
+```
+
+Desactivar entorno virtual
+```bash
+deactivate
+```
+
 ### Cherry picking
 
 1. Te cambias a la rama a la que quieres hacer el merge:
