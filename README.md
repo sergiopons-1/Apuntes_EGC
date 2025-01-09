@@ -87,6 +87,22 @@ Desactivar entorno virtual
 ```bash
 deactivate
 ```
+### Crear rama y saltar a ella
+Crear rama
+
+```bash
+git branch <nombre_rama>
+```
+
+Saltar a la rama
+```bash
+git checkout <nombre_rama>
+```
+
+Crear y saltar a la rama (en un solo comando)
+```bash
+git checkout –b <nombre_rama>
+```
 
 ### Cherry picking
 
