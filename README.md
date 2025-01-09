@@ -34,17 +34,20 @@ git config --global user.email "serponlop@alum.us.es"
 ### Instalar UVLHUB
 
 [Intalación de uvlhub](https://docs.uvlhub.io/installation/manual_installation)
+
+0. Update the system
+```bash
+sudo apt update -y
+sudo apt upgrade -y
+```
+
 1. Git clone
 ```bash
 git clone git@github.com:<YOUR_GITHUB_USER>/uvlhub_practicas.git
 cd uvlhub_practicas
 ```
-2. Crear y entrar en el entorno dentro del repositorio: 
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-3. Mariadb
+
+2. Mariadb
 Install official package
 ```bash
 sudo apt install mariadb-server -y
@@ -79,13 +82,18 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-4. Copiar el .env:
+3. Copiar el .env:
 ```bash
 cp .env.local.example .env
 ```
-5. Ignrorar webhook: 
+4. Ignrorar webhook: 
 ```bash
 echo "webhook" > .moduleignore
+```
+5. Crear y entrar en el entorno dentro del repositorio: 
+```bash
+python -m venv venv
+source venv/bin/activate
 ```
 6. Instalar las dependencias:
 ```bash
