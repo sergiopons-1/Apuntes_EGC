@@ -70,9 +70,6 @@ sudo mysql_secure_installation
 sudo mysql -u root -p
 ```
 ```bash
-
-```
-```bash
 CREATE DATABASE uvlhubdb;
 CREATE DATABASE uvlhubdb_test;
 CREATE USER 'uvlhubdb_user'@'localhost' IDENTIFIED BY 'uvlhubdb_password';
