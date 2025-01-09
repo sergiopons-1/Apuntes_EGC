@@ -19,7 +19,7 @@ git config --global user.email "serponlop@alum.us.es"
  ssh-keygen -t rsa -b 4096
 ```
 
-1. Visualizar la clave para copiarla y meterla en GitHub
+1. Visualizar la clave para copiarla y meterla en GitHub (GitHub -> Settings -> SSH and GPG keys -> New SSH key -> Pegar clave pública (id_rsa.pub))
 
 ```bash
  cd ~/.ssh
