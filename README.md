@@ -286,6 +286,13 @@ sudo docker compose -f docker/docker-compose.dev.yml up
 
 # 4. Disfrutar
 ```
+- Si te da un error de que el puerto está cogido:
+
+```yaml
+sudo service mariadb stop
+```
+
+> Recuerda que si quieres hacer otra vez la ejecución en local lo tienes que habilitar poniendo el mismo comando pero con *start*
 
 ### Quitar el modo *debug* de la ejecución en docker
 
