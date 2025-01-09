@@ -157,6 +157,10 @@ Crear y saltar a la rama (en un solo comando)
 git checkout –b <nombre_rama>
 ```
 
+Subir la rama al repositorio
+```bash
+git push -u origin <nombre_rama>
+```
 ### Cherry picking
 
 1. Te cambias a la rama a la que quieres hacer el merge:
