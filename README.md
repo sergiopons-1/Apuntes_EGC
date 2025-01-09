@@ -44,35 +44,73 @@ cd uvlhub_practicas
 python -m venv venv
 source venv/bin/activate
 ```
-3. Copiar el .env:
+3. Mariadb
+Install official package
+```bash
+sudo apt install mariadb-server -y
+```
+```bash
+sudo systemctl start mariadb
+```
+```bash
+sudo mysql_secure_installation
+```
+```bash
+- Enter current password for root (enter for none): (enter)
+- Switch to unix_socket authentication [Y/n]: `y`
+- Change the root password? [Y/n]: `y`
+    - New password: `uvlhubdb_root_password`
+    - Re-enter new password: `uvlhubdb_root_password`
+- Remove anonymous users? [Y/n]: `y`
+- Disallow root login remotely? [Y/n]: `y` 
+- Remove test database and access to it? [Y/n]: `y`
+- Reload privilege tables now? [Y/n] : `y`
+```
+```bash
+sudo mysql -u root -p
+```
+```bash
+
+```
+```bash
+CREATE DATABASE uvlhubdb;
+CREATE DATABASE uvlhubdb_test;
+CREATE USER 'uvlhubdb_user'@'localhost' IDENTIFIED BY 'uvlhubdb_password';
+GRANT ALL PRIVILEGES ON uvlhubdb.* TO 'uvlhubdb_user'@'localhost';
+GRANT ALL PRIVILEGES ON uvlhubdb_test.* TO 'uvlhubdb_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+4. Copiar el .env:
 ```bash
 cp .env.local.example .env
 ```
-4. Ignrorar webhook: 
+5. Ignrorar webhook: 
 ```bash
 echo "webhook" > .moduleignore
 ```
-5. Instalar las dependencias:
+6. Instalar las dependencias:
 ```bash
 pip install -r requirements.txt
 ```
-6. Instalar rosemary:
+7. Instalar rosemary:
 ```bash
 pip install -e ./
 ```
-7. Realizar migraciones:
+8. Realizar migraciones:
 ```bash
 flask db migrate
 ```
-8. Aplicar las migraciones:
+9. Aplicar las migraciones:
 ```bash
 flask db upgrade
 ```
-9. Popular la base de datos:
+10. Popular la base de datos:
 ```bash
 rosemary db:seed
 ```
-10. Correr el servidor:
+11. Correr el servidor:
 ```bash
 flask run --host=0.0.0.0 --reload --debug
 ```
