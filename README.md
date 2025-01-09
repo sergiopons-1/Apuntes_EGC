@@ -2,6 +2,11 @@
 
 ---
 
+## Captura de pantalla ubuntu
+Capturar toda la pantalla: Presione la tecla Print Screen (o Impr Pant). Esto generará una captura completa de toda la pantalla.
+Capturar una ventana activa: Presione Alt + Print Screen (o Impr Pant). Esto capturará solo la ventana activa.
+Capturar una región específica: Presione Shift + Print Screen (o Impr Pant) y selecciona la región que desee capturar con el cursor.
+
 ## Git
 
 ### Configurar el ssh
