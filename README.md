@@ -286,6 +286,20 @@ jobs:
     prerelease: false
 ```
 
+### Workflows
+Meterme en el archivo que me digan y cambiar la versión (si es lo que hay que cambiar) o lo que sea dentro del archivo django.yml(o el archivo que te indiquen).
+Después si te dicen esto: Prepare el workflow para que la integración con codacy constituya un nuevo job llamado cobertura.  hay que poner lo del codacy así
+```bash
+jobs:
+  cobertura:
+    runs on: Ubuntu-latest
+    needs:build
+    steps:
+      -name...
+      ...
+```
+
+
 ## Docker
 
 ### Pasos para que docker furule
