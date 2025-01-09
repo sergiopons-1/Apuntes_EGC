@@ -87,6 +87,11 @@ Desactivar entorno virtual
 ```bash
 deactivate
 ```
+
+### Activar las issue 
+Ir al apartado de settings del repositorio y activar las issue dentro del apartado Features.
+Para las actions y activarlo.
+
 ### Crear rama y saltar a ella
 Crear rama
 
