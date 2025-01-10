@@ -344,6 +344,9 @@ jobs:
 ```
 
 ### Workflows
+
+[para la sintaxis de los workflow](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+
 Meterme en el archivo que me digan y cambiar la versión (si es lo que hay que cambiar) o lo que sea dentro del archivo django.yml(o el archivo que te indiquen).
 Después si te dicen esto: Prepare el workflow para que la integración con codacy constituya un nuevo job llamado cobertura.  hay que poner lo del codacy así
 ```bash
@@ -358,6 +361,9 @@ jobs:
 
 
 ## Docker
+
+[Web troubleshooting (para render, docker y vagrant)](https://docs.uvlhub.io/troubleshooting)
+
 
 ### Pasos para que docker furule
 
@@ -607,3 +613,18 @@ Vagrant.configure("2") do |config|
 ## Render
 
 [Deployment in Render | UVLHub docs](https://docs.uvlhub.io/deployment/render)
+
+## Enlaces de interés
+ENLACES DE INTERÉS
+
+[Repo Miguel](https://github.com/Yato03/Apuntes-EGC)
+
+[Repo David](https://github.com/vDavidd/Examen_EGC)
+
+[potaje-hub](https://github.com/potaje-hub/potaje-hub)
+
+[Web troubleshooting (para render, docker y vagrant)](https://docs.uvlhub.io/troubleshooting)
+
+[para la sintaxis de los workflow](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+
+[/actions/repositories](https://github.com/orgs/actions/repositories)
